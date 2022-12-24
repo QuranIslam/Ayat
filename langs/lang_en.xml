@@ -1,0 +1,145 @@
+<root>
+	<general>
+		<title> Holy Quran </title>
+		<sura> Sura </sura>
+		<aya> Verse </aya>
+		<page> Page </page>
+		<juz> Juz </juz>
+		<hizb> Hizb </hizb>
+		<arbaa> Arbaa </arbaa>
+		<first> First </first>
+		<second> Second </second>
+		<from> From </from>
+		<to> To </to>
+		<of> Of </of>
+		<open> Open </open>
+		<close> Close </close>
+		<browse> Browse </browse>
+		<back> Back </back>
+		<done> Done </done>
+		<failed> Failed </failed>
+		<language> Language </language>
+		<help>Help</help>
+	</general>
+	<qaree>
+		<qaree_key> Reciter </qaree_key>
+	</qaree>
+	<mode>
+		<mode_select> Display Mode </mode_select>
+		<mode_full> Full features </mode_full>
+		<mode_read> Read only </mode_read>
+		<mode_memo> Memorizing Test </mode_memo>
+		<mode_mobile> Mobile view </mode_mobile>
+	</mode>
+
+	<memo>
+		<memo_boundry> Test limits </memo_boundry>
+		<memo_question> Question </memo_question>
+		<memo_answer> Answer </memo_answer>
+	</memo>
+
+	<search>
+		<search_title> Search </search_title>
+		<search_err_length> Search query must be more than 3 characters </search_err_length>
+		<search_nores> No Results </search_nores>
+		<search_resof> Results for the query  </search_resof>
+		<search_key> Results </search_key>
+	</search>
+	<tafaser>
+		<tafaser_key> Tafsir </tafaser_key>
+
+	</tafaser>
+
+	<recite>
+		<recite_hq> High Quality </recite_hq>
+		<recite_hcon> for fast connections </recite_hcon>
+		<recite_mq> Medium Quality </recite_mq>
+		<recite_mcon> for slow connections </recite_mcon>
+	</recite>
+	<repeat>
+		<repeat_key> Repeat Settings </repeat_key>
+		<repeat_boundry> Repeating limits </repeat_boundry>
+		<repeat_aya> Verse Repeats </repeat_aya>
+		<repeat_all> Range Repeats </repeat_all>
+		<repeat_eachAya> for each Verse </repeat_eachAya>
+		<repeat_aya_null> no repeating </repeat_aya_null>
+		<repeat_waiting> Delay Time </repeat_waiting>
+		<repeat_waiting_null> no delay </repeat_waiting_null>
+		<repeat_waiting_half> Half Telawah duration </repeat_waiting_half>
+		<repeat_waiting_same> Telawah duration </repeat_waiting_same>
+		<repeat_onehalf> one Time and Half </repeat_onehalf>
+		<repeat_start> Start </repeat_start>
+		<repeat_stop> Stop </repeat_stop>
+		<repeat_msg_begin> Please select the Verse that you want to start from </repeat_msg_begin>
+		<repeat_msg_end> Please select the Verse that you want to stop the Telawah at </repeat_msg_end>
+		<repeat_msg_forAya> Please select Verse repeating times </repeat_msg_forAya>
+		<repeat_msg_waiting> Please select the Delay Time </repeat_msg_waiting>
+		<repeat_msg_forAll> Please select Range repeating times </repeat_msg_forAll>
+		<repeat_working> Repeat mode currently active </repeat_working>
+		<repeat_notifyAway> Please quit repeating mode - by stopping it - to be able to browse other pages </repeat_notifyAway>
+	</repeat>
+	<trans>
+		<trans_key> Translations </trans_key>
+		<trans_null> - Hide Translation - </trans_null>
+	</trans>
+
+	<Ayat_download>
+		<download_title> Download </download_title>
+		<download_boundry> Download limits </download_boundry>
+		<download_startBu> Start </download_startBu>
+		<download_resumeBu> Resume </download_resumeBu>
+		<download_pauseBu> Pause </download_pauseBu>
+		<download_stopBu> Cancel </download_stopBu>
+		<download_downloadingtafasir> Downloading Tafsir </download_downloadingtafasir>
+		<download_downloadingtarajem> Downloading Translation </download_downloadingtarajem>
+		<download_downloadingDone> Downloaded </download_downloadingDone>
+		<download_downloadingReq> Requested </download_downloadingReq>
+		<download_audio> Download Recitations </download_audio>
+		<download_images> Download Quran Pages </download_images>
+		<download_tarajem> Download Translations </download_tarajem>
+		<download_ttarajem_key> Translations and Tafasir </download_ttarajem_key>
+		<download_ttarajem_tafaser> Tafasir </download_ttarajem_tafaser>
+		<download_ttarajem_tarajem> Translations </download_ttarajem_tarajem>
+		<download_msg> You can make parallel downloads </download_msg>
+	</Ayat_download>
+
+	<Ayat_alert>
+		<alert_ok> OK </alert_ok>
+		<alert_defTitle> Alert </alert_defTitle>
+	</Ayat_alert>
+	<Ayat_err>
+		<err_fnf> Sorry, File not Found </err_fnf>
+		<err_fnf_tarjama> Sorry , You need to download the required translation </err_fnf_tarjama>
+		<err_fnf_tafsir> Sorry , You need to download the required tafsir </err_fnf_tafsir>
+		<err_fnf_audio> Sorry , You need to download the required audio file </err_fnf_audio>
+		<err_fnf_img> Sorry , You need to download the required image file </err_fnf_img>
+		<err_fnf_download> Download it now ?</err_fnf_download>
+	</Ayat_err>
+	<Ayat_update>
+		<upd_avail> There is a new version available and it's stongly recommended to update now </upd_avail>
+		<upd_avail_must> There is a new version available and you must download it to proceed </upd_avail_must>
+		<upd_okBu> Update </upd_okBu>
+		<upd_noBu> Cancel </upd_noBu>
+		<upd_insBu> Start Installation </upd_insBu>
+		<upd_downloading> Downloading Update ... </upd_downloading>
+		<upd_downloaded> the new version downloaded successfully </upd_downloaded>
+		<upd_failed> Sorry , Failed to download the new version </upd_failed>
+		<upd_patched> Updater has successfully made some updates to the content </upd_patched>
+	</Ayat_update>
+	<Ayat_patching>
+		<ptc_extring> Extracting Content from the File:  </ptc_extring>
+		<ptc_extred> Content Extracted from the File : </ptc_extred>
+	</Ayat_patching>	
+
+	<Ayat_help>
+		<hlp_p10> Ayat is the desktop version of the <a href='http://quran.ksu.edu.sa/' class='ext'>KSU Holy Quran project</a> , which offers all the online version features without the need of internet connection </hlp_p10>
+		<hlp_p20> To be able to use the program without internet connection you have first to download the required content (recitations audio files, images files (scanned quran pages) , translations files) on your PC , there are three methods to download the contents :  </hlp_p20>
+		<hlp_p30> download the content <a href='javascript:;' class='hlp_trgD'>via download panel</a>  (at the left of the screen) which enables you to download recitations audio files, images files and translations files. </hlp_p30>
+		<hlp_p60> download patch files containing the required content , these patches are available at the program's <a href='http://quran.ksu.edu.sa/ayat/?target=patches' class='ext ayat'>website</a>. </hlp_p60>
+		<hlp_p70> download on demand - the program will try to download missed contents and cache it to be available for offline usage, for example if you tried to listen to Surat Al-Faatiha the program will try to download required audio files and cahce it. </hlp_p70>
+		<hlp_p75> for further help please visit the program's <a href='http://quran.ksu.edu.sa/ayat/' class='ext ayat'>website</a> </hlp_p75>
+		<hlp_p77> Installed Version is : <span class='ver_num'></span> <a href='http://quran.ksu.edu.sa/ayat/?target=check_ver' class='ext ayat'>check latest</a> </hlp_p77>		
+		<hlp_p80> Special Thanks To :  </hlp_p80>
+		<hlp_p90> special thanks to <a href="http://qurancomplex.gov.sa/" class="ext" target="_blank">King Fahd Complex for the Printing of the Holy Qur'an</a> (source of Quran images files) , <a href="http://www.tanzil.net"  class="ext" target="_blank">Tanzil.net</a> (source of Quran text and translations) , <a href="http://www.mosshaf.com/"  class="ext" target="_blank">mosshaf.com</a> (source of Tafasir (explanations)) and <a href="http://www.versebyversequran.com/site/" class="ext" target="_blank">Verse by Verse Quran</a> (source of recitations audio files). </hlp_p90>
+	</Ayat_help>
+</root>

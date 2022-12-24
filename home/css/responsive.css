@@ -1,0 +1,502 @@
+
+/* 
+   ------------------------------------------------------
+					Responsive Styles
+   ------------------------------------------------------
+*/
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	/*------------------------------------------*/
+	/*	 Intro Description 
+	/*------------------------------------------*/
+
+	#intro_description h1 {font-size: 45px; line-height: 45px; margin-top: 30px;}
+	#intro_description p { font-size: 18px; line-height: 24px;}
+		
+	/*------------------------------------------*/
+	/*	 Feature Section Basic Styles
+	/*------------------------------------------*/
+	
+	.feature_description h2 {font-size: 26px;}	
+	.feature_description p {font-size: 16px; line-height: 24px;} 
+
+	/*------------------------------------------*/
+	/*	 Feature One Description
+	/*------------------------------------------*/	
+
+	#feature_1_description {margin-top: 70px;}
+	
+	/*------------------------------------------*/
+	/*	 Feature Two Description
+	/*------------------------------------------*/	
+
+	#feature_2_description {margin-top: 20px;}
+	
+	/*------------------------------------------*/
+	/*	 Feature Three Description
+	/*------------------------------------------*/	
+
+	#feature_3_description {margin-top: 70px;}
+	
+	/*------------------------------------------*/
+	/*	 Testimonial Message Text
+	/*------------------------------------------*/
+
+	.testimonials p {font-size: 26px; line-height: 40px;}
+	
+	/*------------------------------------------*/
+	/*	 Feature Four Description
+	/*------------------------------------------*/	
+
+	#feature_4_description {margin-top: 130px;	}
+	
+	/*------------------------------------------*/
+	/*	  FAQs Question
+	/*------------------------------------------*/
+
+	.question h4 {font-size: 16px;}
+	.question p {font-size: 16px;line-height: 24px;}
+		
+	/*------------------------------------------*/
+	/*	  Newsletter
+	/*------------------------------------------*/
+	
+	#newsletter p {font-size: 20px;padding: 0 10%;}
+
+	
+	
+}
+
+
+@media only screen and (max-width: 991px){
+	
+	/*------------------------------------------*/
+	/*	 Intro Description 
+	/*------------------------------------------*/
+
+	#intro {text-align: center; }
+	
+	/*------------------------------------------*/
+	/*	 Intro Description 
+	/*------------------------------------------*/
+
+	#intro_description h1 {font-size: 45px; line-height: 45px; margin-top: 0px;}
+	#intro_description h2 { margin-bottom: 15px;}
+	#intro_description p { font-size: 18px; line-height: 24px; padding: 0 10%;}
+	
+	/*------------------------------------------*/
+	/*	 Intro Header Store Icons
+	/*------------------------------------------*/
+
+	#intro_stores { margin-top: 25px; margin-bottom: 60px;}
+	
+	/*------------------------------------------*/
+	/*	  Features
+	/*------------------------------------------*/
+	
+	.features_title h1 {font-size: 32px;}
+	.feature-box-content h4 {font-size: 16px;}
+	
+	/*------------------------------------------*/
+	/*	 Call-To-Action Slogan
+	/*------------------------------------------*/  
+
+	#cta_slogan { text-align: center; margin-bottom: 10px;}
+	
+	/*------------------------------------------*/
+	/*	 Call-To-Action Button
+	/*------------------------------------------*/  
+	
+	#cta_button { text-align: center;}
+	#cta_button p {margin-top: 10px; }
+	
+	/*------------------------------------------*/
+	/*	 Feature Section Basic Styles
+	/*------------------------------------------*/
+	
+	.feature_description h2 {font-size: 26px;}	
+	.feature_description p {font-size: 16px; line-height: 24px;} 
+	
+	/*------------------------------------------*/
+	/*	 Feature One Description
+	/*------------------------------------------*/	
+
+	#feature_1_description {margin-top: 30px;}
+	
+	/*------------------------------------------*/
+	/*	 Feature Two
+	/*------------------------------------------*/	
+	
+	#feature_two .row {	padding-top: 100px; }
+	
+	/*------------------------------------------*/
+	/*	 Feature Two Description
+	/*------------------------------------------*/	
+
+	#feature_2_description {margin-top: 0; margin-bottom: 60px;}
+	
+	/*------------------------------------------*/
+	/*	 Feature Three
+	/*------------------------------------------*/	
+	
+	#feature_three .row {padding-bottom: 100px;} 
+	#feature_three .feature_image .img-responsive {display: block;}
+	
+	/*------------------------------------------*/
+	/*	 Feature Three Description
+	/*------------------------------------------*/	
+
+	#feature_3_description {margin-top: 30px;}
+		
+	/*------------------------------------------*/
+	/*	  Statistic Banner Content
+	/*------------------------------------------*/ 
+
+	.statistic-icon {font-size: 60px; line-height: 50px;	}
+	.statistic-number {font-size: 60px; line-height: 60px;}
+	.statistic-text {font-size: 16px;}
+	
+	/*------------------------------------------*/
+	/*	  Video Banner
+	/*------------------------------------------*/ 
+	
+	#video_title h2 {font-size: 32px;}
+	#video_title p {font-size: 18px; line-height: 24px; padding: 0 2%;}
+		
+	/*------------------------------------------*/
+	/*	 Testimonial
+	/*------------------------------------------*/
+	
+	.testimonials {margin: 100px 0% 80px;}
+	
+	/*------------------------------------------*/
+	/*	 Testimonial Message Text
+	/*------------------------------------------*/
+
+	.testimonials p {font-size: 24px; line-height: 36px;}
+	
+	/*------------------------------------------*/
+	/*	 Feature Four
+	/*------------------------------------------*/	
+
+	#feature_four {padding-bottom: 100px;}
+	.stores {text-align: center;}
+	
+	/*------------------------------------------*/
+	/*	 Feature Four Description
+	/*------------------------------------------*/	
+
+	#feature_4_description {margin-top: 30px;}
+	
+	/*------------------------------------------*/
+	/*	  FAQs
+	/*------------------------------------------*/
+	
+	#faq h1 {font-size: 32px;}
+	.question h4 {font-size: 16px;}
+	
+	/*------------------------------------------*/
+	/*	  FAQs Question
+	/*------------------------------------------*/
+
+	.question p {font-size: 16px; line-height: 24px;}
+	
+	/*------------------------------------------*/
+	/*	  Newsletter
+	/*------------------------------------------*/
+	
+	#newsletter h1 {font-size: 32px;}
+	#newsletter p {font-size: 18px; padding: 0 5%;}
+	
+	/*------------------------------------------*/
+	/*	  Newsletter Form Input
+	/*------------------------------------------*/
+	
+	#newsletter form input[type="email"] {width: 55%;}
+	#newsletter form input[type="submit"] {width: 25%;}	
+	
+	/*------------------------------------------*/
+	/*	 Footer Copy 
+	/*------------------------------------------*/  
+
+	#footer_copy p {font-size: 16px;}
+
+	
+}
+
+
+@media only screen and (max-width: 767px){
+	
+	/*------------------------------------------*/
+	/*	 Logo Image    
+	/*------------------------------------------*/
+
+	.navbar-brand {padding: 10px 45px;}  
+	
+	/*------------------------------------------*/
+	/*	 Responsive Menu
+	/*------------------------------------------*/
+	
+	.navbar-nav { margin: 0 -15px; border-top: 1px solid #ddd; background-color: #f4f4f4;}	
+	.navbar-nav > li { text-align: center;}
+	.navbar-nav > li > a { line-height: 50px; text-align: center; text-align: center;}
+	
+	#features, #feature_one, #feature_two, #feature_three, #video, #testimonials-rotator, #feature_four, #faq { padding-left: 45px; padding-right: 45px; }
+	#statistic-banner { padding-left: 30px; padding-right: 30px; }
+	
+	/*------------------------------------------*/
+	/*	 Intro Description 
+	/*------------------------------------------*/
+
+	#intro_description h1 {font-size: 40px; line-height: 40px;}
+	#intro_description h2 { font-size: 26px; }
+	#intro_description p { font-size: 16px; line-height: 22px; padding: 0 10%;}
+	
+	/*------------------------------------------*/
+	/*	 IntroStore Icons
+	/*------------------------------------------*/
+
+	#intro_stores a img {margin-bottom: 10px;}
+		
+	/*------------------------------------------*/
+	/*	 Testimonial Message Text
+	/*------------------------------------------*/
+
+	.testimonials p {font-size: 22px; line-height: 32px;}
+	
+	/*------------------------------------------*/
+	/*	  Statistic Banner Content
+	/*------------------------------------------*/ 
+
+	.statistic-icon {font-size: 50px; line-height: 40px;	}
+	.statistic-number {font-size: 50px; line-height: 50px;}
+	.statistic-text {font-size: 14px;}
+
+	/*------------------------------------------*/
+	/*	 Footer Copy 
+	/*------------------------------------------*/  
+
+	#footer_copy p {font-size: 14px;}
+	
+	
+}
+
+
+@media (max-width: 480px) {
+
+	#stlChanger { display: none; }
+	
+	#features, #feature_one, #feature_two, #feature_three, #video, #testimonials-rotator, #feature_four, #faq { padding-left: 15px; padding-right: 15px; }
+	#statistic-banner { padding-left: 10px; padding-right: 10px; }
+	
+	/*------------------------------------------*/
+	/*	 Intro Description 
+	/*------------------------------------------*/
+
+	#intro_description h1 {font-size: 38px; line-height: 40px;}
+	#intro_description h2 { font-size: 26px; }
+	#intro_description p { font-size: 16px; line-height: 22px; padding: 0;}
+	
+	/*------------------------------------------*/
+	/*	  Feature List
+	/*------------------------------------------*/
+	
+	.features_title h1 {font-size: 30px;}
+	.feature-box-content h4 {font-size: 16px;}
+	.feature-box-content p {font-size: 14px; }
+	
+	/*------------------------------------------*/
+	/*	 Call-To-Action
+	/*------------------------------------------*/  
+	
+	#cta_slogan h2 {font-size: 26px; line-height: 32px; padding: 0 8%;}
+	#cta_slogan p {font-size: 16px; line-height: 24px; padding: 0 11%;}
+		
+	/*------------------------------------------*/
+	/*	  Statistic Banner Content
+	/*------------------------------------------*/ 
+
+	.statistic-block {width: 100%; float: none; margin-bottom: 30px;}
+	.statistic-block:last-child { margin-bottom: 0; }
+	
+	/*------------------------------------------*/
+	/*	  Feature List Content
+	/*------------------------------------------*/
+
+	.list-item h5 {font-size: 15px;}
+		
+	/*------------------------------------------*/
+	/*	  Video Banner
+	/*------------------------------------------*/ 
+
+	#video {padding-top: 60px;}
+	#video_title h2 {font-size: 30px;}
+	#video_title p {font-size: 18px; line-height: 22px; padding: 0 2%;}
+	
+	/*------------------------------------------*/
+	/*	  Video Content Settings
+	/*------------------------------------------*/ 
+	
+	.video-block {padding-top: 10px;}
+	
+	/*------------------------------------------*/
+	/*	 Testimonial Message Text
+	/*------------------------------------------*/
+
+	.testimonials p {font-size: 20px; line-height: 30px; padding: 0 2%;}
+	
+	/*------------------------------------------*/
+	/*	 Feature Four Stores Buttons
+	/*------------------------------------------*/
+
+	.stores a img {margin-bottom: 8px;}
+		
+	/*------------------------------------------*/
+	/*	  FAQs Question
+	/*------------------------------------------*/
+
+	#faq h1 {font-size: 30px;}
+	.question h4 {font-size: 16px;}
+	.question p {font-size: 14px; line-height: 20px;}
+		
+	/*------------------------------------------*/
+	/*	  Newsletter
+	/*------------------------------------------*/
+	
+	#newsletter h1 {font-size: 28px; }
+	#newsletter p {font-size: 16px; padding: 0 2%;}
+	
+	/*------------------------------------------*/
+	/*	  Newsletter Form Input
+	/*------------------------------------------*/
+	
+	#newsletter form input[type="email"] {width: 60%; font-size: 16px;}
+	#newsletter form input[type="submit"] {width: 30%; font-size: 16px; margin-left: 5px;}	
+	.message {font-size: 16px;}
+
+		
+}
+
+
+@media (max-width: 320px) {
+	
+	#features, #feature_one, #feature_two, #feature_three, #video, #testimonials-rotator, #feature_four, #faq { padding-left: 0px; padding-right: 0px; }
+	#statistic-banner { padding-left: 5px; padding-right: 5px; }
+	
+	/*------------------------------------------*/
+	/*	 Logo Image    
+	/*------------------------------------------*/
+
+	.navbar-brand {padding: 10px 15px;}  
+	
+	/*------------------------------------------*/
+	/*	 Responsive Menu    
+	/*------------------------------------------*/
+
+	.navbar-toggle {margin: 13px 15px 13px 0;}
+		
+	/*------------------------------------------*/
+	/*	 Intro Header Image
+	/*------------------------------------------*/
+	
+	/*#intro_image { display: none; } MOD AYAT*/
+	
+	/*------------------------------------------*/
+	/*	  Feature List
+	/*------------------------------------------*/
+	
+	#features .row {padding-bottom: 50px;}
+	.features_title h1 {font-size: 26px;}
+	
+	/*------------------------------------------*/
+	/*	 Call-To-Action
+	/*------------------------------------------*/  
+	
+	#cta_slogan h2 {font-size: 22px; line-height: 30px; padding: 0;}
+	#cta_slogan p {font-size: 16px; line-height: 24px; padding: 0;}
+	
+	/*------------------------------------------*/
+	/*	 Feature Section Basic Styles
+	/*------------------------------------------*/
+	
+	.feature_description h2 {font-size: 22px;}	
+	.feature_description p {font-size: 14px; line-height: 20px;} 
+	
+	/*------------------------------------------*/
+	/*	 Feature One
+	/*------------------------------------------*/
+	
+	#feature_one .row {padding-top: 80px; padding-bottom: 60px;}
+	
+	/*------------------------------------------*/
+	/*	 Feature Two
+	/*------------------------------------------*/
+	
+	#feature_two .row {padding-top: 80px; padding-bottom: 80px;}
+	
+	/*------------------------------------------*/
+	/*	 Feature Three
+	/*------------------------------------------*/
+	
+	#feature_three .row {padding-top: 80px; padding-bottom: 60px;}
+	
+	/*------------------------------------------*/
+	/*	  Feature List Content
+	/*------------------------------------------*/
+
+	.list-item h5 {font-size: 14px; line-height: 20px;}
+	
+	/*------------------------------------------*/
+	/*	  Video Banner
+	/*------------------------------------------*/ 
+
+	#video {padding-top: 60px;}
+	#video_title h2 { font-size: 26px; margin-bottom: 10px;}
+	#video_title p {font-size: 16px; line-height: 24px; padding: 0;}
+	
+	/*------------------------------------------*/
+	/*	 Testimonial
+	/*------------------------------------------*/
+	
+	.testimonials {margin: 60px 8% 60px; }
+
+	/*------------------------------------------*/
+	/*	 Testimonial Message Text
+	/*------------------------------------------*/
+
+	.testimonials p {font-size: 16px; line-height: 24px; padding: 0;}
+	
+	/*------------------------------------------*/
+	/*	  FAQs
+	/*------------------------------------------*/
+
+	#faq {padding-top: 80px;}
+	#last_row {padding-bottom: 60px;}
+	#faq h1 {font-size: 26px;}
+	
+	/*------------------------------------------*/
+	/*	  Newsletter
+	/*------------------------------------------*/
+	
+	#newsletter h1 {font-size: 26px; }
+	#newsletter p {font-size: 16px; padding: 0;}
+	
+	/*------------------------------------------*/
+	/*	  Newsletter Form Input
+	/*------------------------------------------*/
+	
+	#newsletter form input[type="email"] {width: 55%; font-size: 14px;}
+	#newsletter form input[type="submit"] {width: 40%; font-size: 14px; margin-left: 2px;}	
+	.message {font-size: 16px;}
+	
+	/*------------------------------------------*/
+	/*	 Footer Copy 
+	/*------------------------------------------*/  
+
+	#footer_copy p { line-height: 22px;}
+	
+	
+
+}

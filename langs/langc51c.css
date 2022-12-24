@@ -1,0 +1,130 @@
+body{
+	font-weight:bold;
+	background:#f6f6f6;
+	padding:30px 0;
+}
+#tb{
+	width: 100%;
+	height:25px;
+	position:fixed;
+	top:0;
+	left:0;
+	background:#004386;
+	color:#fff;
+	border:1px solid #ebebeb;
+	padding:10px;
+	margin-left:-10px;
+}
+#tb_msg{
+	display: none;
+	background:#ffff00;
+	color:#000051;
+	font-weight:bold;
+	position:absolute;
+	top:5px;
+	left:50%;
+	padding:5px 15px;
+	border-radius:5px;
+}
+
+button{
+	background:#fbfbfb;
+	color:#5d5d5d;
+	padding:5px;
+	margin:0 5px;
+	font-weight:bold;
+	border:1px solid #f0f0f0;
+	border-radius:5px;
+}
+button.active{
+	background:#fff788;
+
+}
+#tb .right{
+	float:right;
+	margin-right:15px;
+}
+#tb_exp,#tb_imp,#tb_done{
+	display:none;
+	width:100%;
+	background:#ffffa6;
+	border-bottom:1px solid #fef17e;
+	padding:10px;
+	margin:5px 0;
+	color:#000;
+	text-align:center;
+}
+
+.hilite{
+	color:#800000;
+}
+#ifr{
+	background:#fff;
+	display:none;
+	width:94%;
+	height:920px;
+	min-width:980px;
+	position:fixed;
+	top:50px;
+	left:3%;
+}
+fieldset{
+	margin:20px;
+	border:1px solid #c7c7c7;
+	background:#f9f9f9;
+}
+fieldset legend{
+	font-size:120%;
+}
+fieldset label{
+	color:#002953;
+	display:block;
+	width:auto;
+	padding:10px;
+	margin-right:40px;
+}
+fieldset textarea{
+	display:block;
+	margin:3px 0px 25px 30px;
+	font-weight:bold;
+	overflow:visible;
+	background:#f4f4f4;
+	border:1px solid #ebebeb;
+	color:#1d1d1d;
+}
+fieldset input{
+	margin:3px 0px 25px 30px;
+	background:#fdfdfd;
+	border:1px solid #ebebeb;
+	padding:5px;
+	color:#1d1d1d;
+}
+select,option{
+	font-weight: bold;
+}
+.instr{
+	color:#003162;
+}
+u{
+	color:#800000;
+}
+li{
+	padding:3px;
+}
+
+#trj_hint{
+	display:none;
+}
+
+#trj_hint, #trj_hint p, #trj_hint div{
+	text-align:center;
+	color:#004080;
+	margin:5px;
+	padding:5px;
+	font-size:20px;
+}
+#bu_yes{
+	color:#2c5656;
+	font-size:18px;
+}
+

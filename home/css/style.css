@@ -1,0 +1,1149 @@
+
+
+
+@font-face {
+  font-family: 'Droid Arabic Naskh';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/DroidNaskh-Regular.eot);
+  src: url(../fonts/DroidNaskh-Regulard41d.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/DroidNaskh-Regular.woff2) format('woff2'),
+       url(../fonts/DroidNaskh-Regular.woff) format('woff'),
+       url(../fonts/DroidNaskh-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Droid Arabic Naskh';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/DroidNaskh-Bold.eot);
+  src: url(../fonts/DroidNaskh-Boldd41d.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/DroidNaskh-Bold.woff2) format('woff2'),
+       url(../fonts/DroidNaskh-Bold.woff) format('woff'),
+       url(../fonts/DroidNaskh-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family:'MhgozFont';
+	src: url('../fonts/MHGOZ-Light.eot');
+	src: local('?'), url('../fonts/MHGOZ-Light.woff') format('woff'), url('../fonts/MHGOZ-Light.ttf') format('truetype'), url('../fonts/MHGOZ-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
+/* araic fonts*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: MhgozFont, arial;
+
+}
+
+
+
+body {
+
+	font-family: 'Droid Arabic Naskh', arial;
+
+}
+
+
+#main-menu .main-navigation .menu li a {
+	border: 0 none;
+	display: block;
+	font-size: 16px;
+	font-weight:normal !important;
+	line-height: 24px;
+	padding: 24px 28px;
+	text-decoration: none;
+	position: relative;
+	font-family: MhgozFont, arial;
+}
+
+
+
+@font-face{
+    font-family:'cocon';
+    src:url('../fonts/cocon862f.eot?v=4.1.0');
+    src:url('../fonts/cocond41d.eot?#iefix&v=4.1.0') format('embedded-opentype'),
+        url('../fonts/cocon862f.woff?v=4.1.0') format('woff'),
+        url('../fonts/cocon862f.ttf?v=4.1.0') format('truetype'),
+        url('../fonts/cocon862f.svg?v=4.1.0#fontawesomeregular') format('svg');
+    font-weight:normal;
+    font-style:normal
+}
+
+/* ------------------------------------------ */
+/*             TABLE OF CONTENTS
+/* ------------------------------------------ */
+
+/*   01 - General & Basic Styles   */
+/*   02 - Header & Navigation      */
+/*   03 - Intro      			   */
+/*   04 - Features List            */
+/*   05 - Call to Action 	  	   */
+/*   06 - Feature One		       */
+/*   07 - Feature Two              */
+/*   08 - Statistic Banner         */
+/*   09 - Feature Three            */
+/*   10 - Video Banner             */
+/*   11 - Testimonials Rotator	   */
+/*   12 - Feature Four             */
+/*   13 - FAQs		 	  	       */
+/*   14 - Newsletter	 	  	   */
+/*   15 - Footer		 	  	   */
+/*   16 - Scroll to Top	 	  	   */
+
+
+
+/* ==========================================================================
+   01. GENERAL & BASIC STYLES
+   ========================================================================== */
+
+#content_wrapper  {
+	margin-top: 60px;
+}
+    
+/*------------------------------------------*/
+/*	 Preload Animation 
+/*------------------------------------------*/
+
+#preloader{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 99999; 
+	background-color: #fff;
+}
+
+#status{
+	position:absolute;
+	top:50%; 
+	left:50%; 
+	margin:-100px 0 0 -100px;
+	width:200px;
+	height:200px;
+	background-image: url(../img/icons/loader.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 75px 75px;
+}    
+   
+/*------------------------------------------*/
+/*	 Parallax Settings
+/*------------------------------------------*/
+
+.parallax {
+	background-attachment: fixed !important;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#statistic-banner { 
+	background-image: url(../img/parallax/statistic-banner.html); 
+}
+
+#call_to_action { 
+	background-image: url(../img/parallax/call-to-action.html); 
+}
+
+#video { 
+	background-image: url(../img/parallax/video_banner.html); 
+}
+
+/*------------------------------------------*/
+/*	 Headers
+/*------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0; 
+	margin-bottom: 10px;
+}
+
+/*------------------------------------------*/
+/*	 Lists
+/*------------------------------------------*/
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/*------------------------------------------*/
+/*	 Link Setting
+/*------------------------------------------*/
+
+a {
+	text-decoration: none;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+}
+
+a:hover {
+	color: #444;
+	text-decoration: none;
+}
+
+a:focus {
+	color: #f8f8f8;
+	outline: none;
+	border: none;
+	text-decoration: none;
+} 
+
+/*------------------------------------------*/
+/*	 Theme Button
+/*------------------------------------------*/
+
+.btn-theme {
+	background-color: #19acca;
+	color: #fff;
+	font-size: 18px;
+	font-family: 'Droid Arabic Naskh', arial, sans-serif;
+	font-weight: 700;
+	padding: 10px 20px;
+	-webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+}
+
+.btn-theme:hover {
+	background-color: #1292ac;
+	color: #fff;
+}
+
+/*------------------------------------------*/
+/*	 Button Hover/Focus
+/*------------------------------------------*/
+
+.btn:focus {
+	color: #f8f8f8;
+	text-decoration: none;
+	outline: none;
+}
+
+/*------------------------------------------*/
+/*	 Feature Section Basic Styles
+/*------------------------------------------*/ 
+   
+.feature_image .img-responsive { 
+	display: inline-block; 
+	margin: 0 auto;
+} 
+
+.feature_description h2 {
+	color: #222;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.feature_description p {
+	font-size: 18px;
+	font-family: 'Droid Arabic Naskh', arial, sans-serif;
+	line-height: 26px;
+}  
+
+
+
+/* ==========================================================================
+   02. HEADER & NAVIGATION
+   ========================================================================== */
+
+/*------------------------------------------*/
+/*	 Logo Image    
+/*------------------------------------------*/
+
+.navbar-brand {
+	padding: 10px 15px;
+}  
+     
+/*------------------------------------------*/
+/*	 Navigation Menu    
+/*------------------------------------------*/
+
+.navbar {	
+	margin-bottom: 0;
+	-webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.navbar-fixed-top { 
+	background-color: #f4f4f4;
+	border-bottom: 1px solid #ddd;
+	padding:15px 0;
+}
+
+.navbar-nav > li > a {
+	color: #222;
+	font-size: 13px;
+	font-family: MhgozFont,arial, sans-serif;
+	line-height: 60px;
+	font-weight: 200;
+	text-transform: uppercase;
+	display: block;
+	padding: 0 15px;
+	-webkit-transition: all 100ms ease-in-out;
+	-moz-transition: all 100ms ease-in-out;
+	-o-transition: all 100ms ease-in-out;
+	-ms-transition: all 100ms ease-in-out;
+	transition: all 100ms ease-in-out;
+}
+
+/*------------------------------------------*/
+/*	 Menu Hover
+/*------------------------------------------*/
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a.selected-nav {
+	color: #19acca;
+	background-color: transparent;
+}
+
+/*------------------------------------------*/
+/*	 Responsive Menu    
+/*------------------------------------------*/
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+	background-color: none;
+    padding: 10px;
+	margin: 13px 30px 13px 0;
+	border: none;
+	color: #fff;
+	border: 2px solid #333;
+}
+
+.navbar-toggle .icon-bar {
+	background-color: #333;
+}
+
+
+
+/* ==========================================================================
+   03. INTRO
+   ========================================================================== */
+
+/*------------------------------------------*/
+/*	 Intro Basic Settings
+/*------------------------------------------*/
+
+#intro {
+	width: 100%;
+	background-image: url(../img/thumbs/intro_header_bkg.jpg);
+	background-color: #19acca;
+	background-repeat: no-repeat;
+	background-position: center center;		
+	background-size: cover;
+	color: #fff;
+	padding-top: 104px;
+}
+
+/*------------------------------------------*/
+/*	 Intro Description 
+/*------------------------------------------*/
+
+#intro_description h1 {
+	font-size: 32px;
+	font-weight: 900;
+	line-height: 50px;
+	margin-top: 60px;
+	margin-bottom: 5px;
+}
+
+#intro_description h2 { 
+	font-size: 30px;
+	font-weight: 900;
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+
+#intro_description p { 
+	font-size: 20px;
+	font-family: 'Droid Arabic Naskh', arial, sans-serif;
+	line-height: 28px;
+}
+
+/*------------------------------------------*/
+/*	 Intro Store Icons
+/*------------------------------------------*/
+
+#intro_stores {
+	margin-top: 50px;
+}
+
+#intro_stores a {
+	margin-right: 5px;
+}
+
+#intro_stores a:last-child {
+	margin-right: 0;
+}
+
+/*------------------------------------------*/
+/*	 Intro Image
+/*------------------------------------------*/
+
+#intro_image .img-responsive { 
+	display: inline-block; 
+	padding-top:15px;
+}
+
+
+
+/* ==========================================================================
+   04. FEATURES LIST
+   ========================================================================== */
+
+#features .row {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}  
+   
+.features_title h1 {
+	font-size: 40px;
+	font-weight: 300;
+	margin-bottom: 40px;
+} 
+   
+/*------------------------------------------*/
+/*	  Feature Box
+/*------------------------------------------*/
+
+.feature-box {
+	margin-bottom: 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/*------------------------------------------*/
+/*	  Feature Box Icon
+/*------------------------------------------*/
+
+.feature-box-icon {
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    border-radius: 30px;
+    color: #19acca;
+    line-height: 60px;
+    text-align: center;
+    font-size: 48px;
+}
+.feature-box-icon img{
+    width:50px;
+}
+/*------------------------------------------*/
+/*	  Feature Box Content
+/*------------------------------------------*/
+
+.feature-box-content {
+	padding-right: 70px;
+    text-align: right;
+}
+
+.feature-box-content h4 {
+	color: #333;
+	font-weight: 700;
+}
+
+.feature-box-content p {
+	font-size: 16px;
+	font-family: 'Droid Arabic Naskh', arial, sans-serif;
+	line-height: 24px;
+	margin-top:10px;
+}
+
+
+
+/* ==========================================================================
+   05. CALL TO ACTION
+   ========================================================================== */
+
+#call_to_action,#languages_list {
+	padding-top: 50px;
+}   
+
+#call_to_action,#languages_list .row {
+	padding-bottom: 50px;
+}
+
+/*------------------------------------------*/
+/*	 Call-To-Action Slogan
+/*------------------------------------------*/  
+
+#cta_slogan h2 {
+	color: #fff;
+	font-weight: 700;
+	margin-bottom: 2px;
+}
+
+#cta_slogan h2 span {
+	color: #19acca;
+}
+
+#cta_slogan p {
+	color: #fff;
+	font-size: 18px;
+	font-family: 'Droid Arabic Naskh', arial, sans-serif;	
+	line-height: 26px;
+	margin-bottom: 0;
+}
+
+#cta_slogan p span {
+	color: #19acca;
+	font-weight: 700;
+}
+
+/*------------------------------------------*/
+/*	 Call-To-Action Button
+/*------------------------------------------*/  
+
+#cta_button a {
+	margin-top: 5px;
+}
+
+
+
+/* ==========================================================================
+   06. FEATURE ONE
+   ========================================================================== */
+
+#feature_one .row {
+	padding-top: 120px;
+	padding-bottom: 100px;
+} 
+
+/*------------------------------------------*/
+/*	 Feature One Description
+/*------------------------------------------*/	
+
+#feature_1_description {
+	margin-top: 100px;
+}
+
+
+
+/* ==========================================================================
+   07. FEATURE TWO
+   ========================================================================== */
+
+#feature_two .row {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}   
+
+/*------------------------------------------*/
+/*	 Feature Two Description
+/*------------------------------------------*/	
+
+#feature_2_description {
+	margin-top: 60px;
+}
+
+
+
+/* ==========================================================================
+   08. STATISTIC BANNER
+   ========================================================================== */
+
+#statistic-holder {
+	padding-top: 65px;
+	padding-bottom: 65px;
+} 
+
+/*------------------------------------------*/
+/*	  Statistic Banner Content
+/*------------------------------------------*/ 
+
+.statistic-block {
+	text-align: center;
+}
+
+.statistic-icon {
+	color: #19acca;
+	font-size: 70px;
+	font-family: 'Droid Arabic Naskh', arial, sans-serif;
+	line-height: 60px;	
+}
+
+.statistic-number,.statistic-numb {
+	color: #fff;
+	font-size: 70px;
+	font-family: 'Droid Arabic Naskh', arial, sans-serif;
+	line-height: 70px;
+	font-weight: 900;
+}
+
+.statistic-text {
+	color: #fff;
+	font-size: 18px;
+	font-family: 'Droid Arabic Naskh', arial, sans-serif;
+	text-transform: uppercase;
+}
+ 
+
+
+/* ==========================================================================
+   09. FEATURE THREE
+   ========================================================================== */
+
+#feature_three .row {
+	padding-top: 120px;
+	padding-bottom: 80px;
+}   
+
+/*------------------------------------------*/
+/*	 Feature Three Description
+/*------------------------------------------*/	
+
+#feature_3_description {
+	margin-top: 90px;
+}
+
+/*------------------------------------------*/
+/*	  Feature List Content
+/*------------------------------------------*/
+
+#feature_three_list {
+	margin-top: 35px;
+}
+
+.list-item {
+	margin-bottom: 18px;
+}
+
+.list-item i {
+	color: #222;
+	margin-right: 10px;
+	font-size: 17px;
+}
+
+.list-item h5 {
+	color: #222;
+	font-size: 17px;
+	font-weight: 500;
+}
+
+
+
+/* ==========================================================================
+   10. VIDEO BANNER
+   ========================================================================== */
+
+#video {
+	padding-top: 100px;
+}
+
+#video_title h2 {
+	color: #fff;
+	font-size: 40px;
+	font-weight: 300;
+	margin-bottom: 5px;
+}
+
+#video_title h2 span {
+	font-weight: 700;
+}
+
+#video_title p {
+	color: #fff;
+	font-size: 20px;
+	font-family: 'Droid Arabic Naskh', arial, sans-serif;
+	font-weight: 300;
+	line-height: 26px;
+	margin-bottom: 40px;
+}
+
+/*------------------------------------------*/
+/*	  Video Content Settings
+/*------------------------------------------*/ 
+
+.video-block {
+	position: relative;
+	padding-bottom: 54.25%;
+	padding-top: 20px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-block iframe,
+.video-block object,
+.video-block embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border:0;
+}
+
+
+
+/* ==========================================================================
+   11. TESTIMONIALS ROTATOR
+   ========================================================================== */
+  
+.testimonials {
+	margin: 120px 8% 80px;
+}
+
+.slides {
+	margin: 10px 0 200px;
+}
+
+/*------------------------------------------*/
+/*	 Message Author
+/*------------------------------------------*/
+
+.testimonials p.author {
+	font-size: 16px;
+	font-family: 'Droid Arabic Naskh', arial, sans-serif;
+	font-weight: 600;
+	margin-bottom: 0;
+	padding-top: 10px;
+}
+
+.testimonials p.author span {
+	color: #19acca;
+}
+
+/*------------------------------------------*/
+/*	 Testimonial Message Text
+/*------------------------------------------*/
+
+.testimonials p {
+	font-size: 30px;
+	font-family: 'Droid Arabic Naskh', arial, sans-serif;
+	font-weight: 300;
+	line-height: 46px;
+    padding-top: 10px;
+}
+
+
+
+/* ==========================================================================
+   12. FEATURE FOUR
+   ========================================================================== */
+   
+#feature_four {
+	background-image: url(../img/thumbs/pattern.png);
+	background-color: #19acca;	
+	background-repeat: repeat;
+	background-position: 0 0;
+	padding-bottom: 40px;	
+	color: #fff;
+}
+
+/*------------------------------------------*/
+/*	 Feature Four Image
+/*------------------------------------------*/
+
+#feature_4_image {
+	margin-top: -120px;
+}
+
+/*------------------------------------------*/
+/*	 Feature Four Description
+/*------------------------------------------*/	
+
+#feature_4_description {
+	margin-top: 145px;	
+}
+
+#feature_4_description h2 {
+	color: #fff;
+}
+
+#feature_4_description p {
+	color: #fff;
+}
+
+/*------------------------------------------*/
+/*	 Feature Four Stores Buttons
+/*------------------------------------------*/
+
+.stores {
+	margin-top: 40px;
+}
+
+.stores a {
+	margin-right: 8px;
+}
+
+.stores a:last-child {
+	margin-right: 0;
+}
+
+
+
+/* ==========================================================================
+   13. FAQs
+   ========================================================================== */
+ 
+#faq {
+	padding-top: 100px;
+}
+
+#last_row {
+	padding-bottom: 100px;
+}
+
+#faq h1 {
+	color: #222;
+	font-size: 40px;
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+
+/*------------------------------------------*/
+/*	  FAQs Question
+/*------------------------------------------*/
+
+.question {
+	margin-bottom: 20px;
+}
+  
+.question h4 {
+	font-weight: 600;
+	line-height: 26px;
+}
+
+.question p {
+	color: #666;
+	font-size: 18px;
+	font-family: 'Droid Arabic Naskh', arial, sans-serif;
+	line-height: 26px;
+}
+
+
+
+/* ==========================================================================
+   14. NEWSLETTER
+   ========================================================================== */
+
+#newsletter {
+	padding-top: 60px;
+	padding-bottom: 80px;
+	background-image: url(../img/thumbs/newsletter_bkg.jpg);
+    background-repeat: repeat;
+    background-position: center center;
+}
+
+#newsletter h1 {
+	color: #fff;
+	font-size: 40px;
+	font-weight: 300;
+	margin-bottom: 5px;
+}
+
+#newsletter p {
+	color: #999;
+	font-size: 20px;
+	font-family: 'Droid Arabic Naskh', arial, sans-serif;
+	font-weight: 300;
+	padding: 0 20%;
+}
+
+.message {
+	font-size: 18px;
+    font-family: 'Droid Arabic Naskh', arial, sans-serif;	
+	margin-bottom: 20px;
+}
+
+/*------------------------------------------*/
+/*	  Newsletter Form Input
+/*------------------------------------------*/
+
+#newsletter form input[type="email"] {
+    background-color: #f0f0f0;
+	width: 40%;
+	color: #414141;
+	font-size: 18px;
+    font-family: 'Droid Arabic Naskh', arial, sans-serif;
+    font-weight: 300;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#newsletter form input[type="submit"] {
+	width: 16%;
+	background-color: #19acca;
+	color: #fff;
+	font-size: 18px;
+    font-family: 'Droid Arabic Naskh', arial, sans-serif;
+    font-weight: 300;
+	text-transform: uppercase;
+    margin-left: 10px;
+    padding: 10px 15px;
+	border: medium none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+}
+
+#newsletter form input[type="submit"]:hover {
+	background-color: #1292ac;
+}
+
+
+
+/* ==========================================================================
+   15. FOOTER
+   ========================================================================== */
+
+#footer {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+/*------------------------------------------*/
+/*	 Footer Copy 
+/*------------------------------------------*/  
+
+#footer_copy p {
+	color: #666;
+	font-size: 18px;
+	font-family: 'Droid Arabic Naskh', arial, sans-serif;
+	margin-bottom: 0;
+}
+
+/*------------------------------------------*/
+/*	 Footer Social Icons  
+/*------------------------------------------*/
+
+.footer-socials {
+	display: inline-block; 
+	padding-left: 0;
+}
+
+.footer-socials li {
+	float: left;
+	width: auto !important;
+    display: inline-block !important;
+    vertical-align: top;
+    clear: none !important;
+	padding: 0;
+}
+
+/*------------------------------------------*/
+/*	 Footer Social Icon Setting 
+/*------------------------------------------*/
+
+.foo_social {
+	text-align: center;
+	color: #7f7f7f;
+	font-size: 20px;
+    line-height: 40px;
+	margin: 0 15px;
+    display: block;
+    text-decoration: none;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+}
+
+/*------------------------------------------*/
+/*	 Footer Social Icons Hover 
+/*------------------------------------------*/
+
+.foo_social.ico-facebook:hover {color: #3b5998;}
+.foo_social.ico-twitter:hover {color: #00a9ed;}
+.foo_social.ico-behance:hover {color: #00a8e7;}
+.foo_social.ico-google-plus:hover {color: #cd1111;}
+.foo_social.ico-linkedin:hover {color: #015886;}
+.foo_social.ico-dribbble:hover {color: #d92d84;}
+.foo_social.ico-instagram:hover {color: #beb3a8;}
+.foo_social.ico-pinterest:hover {color: #ac281a; }
+.foo_social.ico-dropbox:hover {color: #008ad2;}
+.foo_social.ico-skype:hover {color: #00a9ed; }
+.foo_social.ico-youtube:hover {color: #cd1b20;}
+.foo_social.ico-tumblr:hover {color: #3a5976;}
+.foo_social.ico-vimeo:hover {color: #00adee;}
+.foo_social.ico-flickr:hover {color: #d2d2d2; }
+.foo_social.ico-github:hover {color: #222; }
+.foo_social.ico-renren:hover {color: #364a83;}
+.foo_social.ico-vk:hover  {color: #3b5998;}
+.foo_social.ico-xing:hover  {color: #015f5e;}
+.foo_social.ico-weibo:hover {color: #be4443; }
+.foo_social.ico-rss:hover {color: #ff6600;}
+.foo_social.ico-digg:hover  {color: #222;}
+.foo_social.ico-deviantart:hover {color: #57675d;}
+.foo_social.ico-envelope:hover {color: #999; }
+.foo_social.ico-delicious:hover {color: #0A0A0A;}
+
+
+
+/* ==========================================================================
+   16. SCROLL TO TOP
+   ========================================================================== */
+
+#scrollUp {
+	display: none;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	background-image: url(../img/icons/back-to-top.png);
+	background-repeat: no-repeat;
+	background-position: 50% 48%;
+	background-color:rgba(123, 123, 123, 0.65);	
+	-webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+	-webkit-transition: all 250ms linear;
+	-moz-transition: all 250ms linear;
+	transition: all 250ms linear;	
+}
+
+#scrollUp:hover {
+	background-color: rgba(25, 172, 202, 0.95);
+}
+
+nav a#pull {  
+    display: none;  
+}
+
+
+.fa{
+    font-family: FontAwesome !important;
+}
+
+a, .statistic-icon, .navbar-nav > li > a:hover, .navbar-nav > li > a.selected-nav{color:#0084bd}
+.statistic-icon img{width:9419px;}
+.btn-primary{background-color:#0084bd;border:none}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary{background-color:#0098DA}
+
+#intro{  background-color: #008DC3;   background-image: url(../img/thumbs/intro_header_bkg.jpg);   background-position-x: 40px;}
+.q-button{padding:0;background:rgb(65, 65, 65);border-bottom:3px solid rgb(47, 47, 47) !important;float:right}
+.q-button i{padding:12px;font-style: normal;color: #fff;}
+.q-button i.fa{padding:12px;background:rgb(56, 56, 56)}
+.q-button span{padding:12px}
+
+#intro_stores a{margin-bottom:12px;min-width:174px;}
+.login-button{margin-right:auto;margin-left:auto;background:rgb(18, 199, 69);border-bottom: 3px solid rgb(11, 163, 54) !important;}
+.login-button i{font-size: 1.7em;}
+.login-button i.fa{background-color:rgba(0, 0, 0, 0.12);}
+.login-button:hover{background:rgb(18, 189, 66);border-bottom: 3px solid rgb(11, 148, 50) !important;}
+
+.login-button{background:#4CAF50;border-bottom:3px solid rgba(0, 0, 0, 0.19) !important}
+
+.hidden-top-bar{text-align:right;direction:rtl;clear: both;background: rgb(229, 229, 229);width: 100%;position: absolute;top: 61px;padding: 10px 12px;left: 0;}
+.navbar-nav > li > a{font-size: 14px;}
+
+.label.label-lg{
+    font-size:96%;
+    font-weight: normal;
+}
+
+#cta_slogan{float:right;direction: rtl;}
+#call_to_action{background:#0084bd url(../img/thumbs/z2.png);}
+
+#statistic-banner{background:#d7d7d7;}
+.statistic-number,.statistic-numb, .statistic-text{color: #494949;}
+
+#features_holder{direction:rtl}
+.feature-box-content h4{margin:0}
+.feature-box-icon{top:4px;right:4px;}
+.feature-box-content p{color:#5F5F5F}
+.feature-box-icon img{border-radius:12px;top:0;border:2px solid #4CAF50}
+#footer{direction: rtl;}
+#footer h4{font-size: 18px; border-bottom: 1px solid #D2D2D2; padding: 7px;}
+
+.navbar-header h1, .navbar-header h2{font-size: 12pt;float: right;margin-right: 12px;margin-top: 15px;}
+.navbar-header h1{margin-top:0}
+.navbar-header h2{  margin-bottom: 0;font-family: "cocon",arial;font-size: 27px;}
+#intro_description h1,
+#intro_description p{  text-align: justify;   direction: rtl;}
+.login-button{margin-top: 34px;position: relative; z-index: 10}
+.hidden-top-bar .label-success{
+    background-color: #3F843F
+}
+@media screen and (min-width: 768px) {
+    .navbar-nav > li{float:right}
+    #navigation-menu{
+        float:left;
+		margin-top:11px;
+    }
+    .navbar-header{
+        float:right;
+        min-width:200px;
+    }
+    .navbar-brand{float: right;}
+    .login-button{margin-top: 50px; margin-bottom: 20px;margin-right:20%}
+
+    a.navbar-brand{
+      /*  position: absolute;*/
+        right:20px;
+        z-index: 10;
+    }
+    a.navbar-brand>img{
+        height: 50px;
+    }
+}
+
+.q-button i{float: right;padding:7px 12px}
+
+@media screen and (max-width: 768px) {
+    .hidden-top-bar{display:none}
+    #intro_description h1, #intro_description p{text-align:center}    
+    #intro{background-image:none}
+    #intro_stores a{width:100%}
+    #intro_description p{
+        clear:both;
+    }
+    #nav-toggle{
+        float:left;
+        margin: 13px 0 13px 15px;
+    }
+    
+    .navbar-brand {
+      padding: 10px !important;
+      float: right !important;
+    }
+
+    .login-button{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px
+    
+    }
+    .login-button i{
+        font-size: 1.4em;
+
+    }
+    
+    a.navbar-brand>img{
+        max-height: 42px;
+    }
+
+}

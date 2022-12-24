@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0">
+  <title>بحث</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.0/foundation.min.css'>
+
+</head>
+<body>
+<style>body{background-color:#e8e4d0;color:#000000;}</style>
+<script id="results" type="text/x-handlebars-template">
+	{{#each this}}
+	<p style="font-weight:bold;text-decoration:none;color:#000000;"><a style="font-weight:bold;text-decoration:underline;color:#000000;" href='/m.html#{{sura}}_{{aya}}&aya={{sura}}_{{aya}}'>{{sura}}_{{aya}}</a> <a style="font-weight:bold;text-decoration:none;color:#000000;"  href='/m.html#{{sura}}_{{aya}}&aya={{sura}}_{{aya}}'>{{DIVISION_NAME}}</a></p>
+	{{/each}}
+</script>
+<div class="row">
+	<div id="output"></div>
+	<div id="output2"></div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.0/foundation.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.0/handlebars.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js'></script><script  src="script.js"></script>
+</body>
+</html>

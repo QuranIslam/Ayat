@@ -1,0 +1,292 @@
+html{
+	direction: ltr;
+}
+
+#header_container{
+	font-size:14px;
+	font-weight:bold;
+	
+}
+#player_area{
+	margin-left:5px;
+}
+
+#repeat_widg{
+	direction:trans_selector_cp;
+}
+
+.repeat_sel_r{
+	float:left;
+}
+.repeat_sel_l{
+	float:left;
+}
+
+#nav_area{
+	background:url(../images/en/nav_bg.png);
+	margin-left:6px;
+	font-size:80%;
+}
+#ctrl_sura{
+	float:left;
+	width:148px;
+	margin-right:0;
+}
+#cp_sura{
+	float:left;
+	padding-left:20px;
+	width:40px;
+	
+}
+#tb_sura{
+	float:left;
+	padding-right:0px;
+	text-align:center;
+	width:88px;
+}
+#cp_juz{
+	float:left;
+}
+#tb_juz{
+	float:left;
+	padding-left:10px;
+}
+
+
+#ctrl_aya{
+	float:left;
+
+	margin:2px 0 0 8px;
+	padding:7px 6px 0 0;
+}
+#cp_aya{
+	float:left;
+	width:40px;
+}
+#tb_aya{
+	float:left;
+	text-align:center;
+	width:36px;
+	padding-right:10px;
+}
+
+#ctrl_page{
+	float:left;
+	padding-right:0;
+	padding-left:0;
+	text-align:center;
+	width:134px;
+	margin:1px 0px 0px 6px;
+
+}
+#cp_safha{
+	float:left;
+	width:58px;
+	padding:0;
+	margin:0;	
+}
+#tb_safha{
+	float:left;
+	text-align:center;
+	padding:0;
+	margin:0;
+	width:38px;
+}
+
+#ctrl_juz{
+	display: block;
+	float:left;
+	width:96px;
+	margin:1px 0 0 0;
+}
+#cp_juz{
+	margin:0;
+	padding:0;
+	width:44px;
+	text-align:center;
+}
+#tb_juz{
+	margin:0;
+	padding:0;
+	width:32px;
+	text-align:center;
+
+}
+
+#search_area{
+	background:url(../images/en/search_bg.png);
+}
+#search_fld{
+	float:left;
+	padding-left:4px;
+}
+#search_bu{
+	float:right;
+	padding-top:5px;
+}
+#modes_area{
+	background:url(../images/en/modes_bg.png);
+}
+#modes_selector{
+	width:138px;
+}
+#modes_selector a.title{
+	padding-left:20px;
+}
+#tafaser_area{
+	background:url(../images/en/tafaser_bg.png);
+}
+#tafaser_selector{
+	width:138px;
+}
+
+#tafaser_selector_cp{
+	float:left;
+	text-align:center;
+}
+#tafaser_selector a.title{
+	float:left;
+}
+#tafaser_selector a.title span.cp{
+	color:#000;
+}
+
+#quraa_area{
+	width:241px;
+	height:22px;
+	background:url(../images/en/quraa_bg.png);
+	margin:5px 10px 0 0;
+	float:right;
+}
+#qaree_name{
+	width:60px;
+	float:left;
+}
+#qaree_sel_cont{
+	padding-right:5px;
+}
+#qaree_selector_cp{
+	float:left;
+	width:60px;
+	margin-left:10px;
+}
+#qaree_selector a.title{
+	float:left;
+	padding-left:10px;
+	width:154px;
+}
+#qaree_selector ul a{
+	font-size: 85%;
+}
+#qaree_selector  b.pb_trans{
+	float:right !important;
+}
+
+#repeat_area{
+	width:135px;
+	background:url(../images/en/repeat_bg.png);
+	float:right;
+	padding:4px 10px 0 5px;
+}
+
+.selobj.trans_selector{
+	float: left;
+	background: url("../images/en/tarajem_bg.png");
+	font-size:12px;
+	
+}
+.trans_selector_cp{
+	float:left;
+	font-size:10px;
+	font-weight:bold;
+	padding:8px 0 0 32px;
+	width:68px;
+}
+.selobj.trans_selector a.title{
+	float:left;
+	text-align:left;
+	width:123px;
+	overflow:hidden;
+	font-size:90%;
+	padding-top:8px;
+	color:#000;
+
+}
+
+
+.selobj a.title{
+	font-size:100%;
+}
+.selobj a.title b{
+	font-weight:normal;
+	font-size:90%; 
+}
+
+.selobj ul li span{
+	text-align:left;
+	font-size:90%;
+
+}
+.selobj ul li span b{
+	font-weight:normal;
+	font-size:90%; 
+}
+.selobj ul li a{
+	text-align:left;
+	font-size:90%;
+	padding-left:8px;
+
+}
+.selobj ul li a b{
+	font-size:90%;
+}
+
+.widgwin .title{
+	text-align: left;
+}
+
+.widgwin .title a.close_bu{
+	display:block;
+	float:right;
+}
+
+#safahat_1 .middle a,#safahat_2 .middle a, #agzaa .middle a, #ayat .middle a,#sowar .middle a{
+	float:left;
+}
+#sowar .middle a{
+	font-size:12px;
+	font-weight:normal;
+}
+.widgwin .middle{
+	margin-left:18px;
+}
+div.wd_hizb{
+	float:left;
+}
+.result_item{
+	direction: rtl;
+}
+
+#memorize_widg{
+
+	font-size:100%;
+}
+
+.memorize_sel_right{
+	float:left;
+	width:50%;
+}
+.memorize_sel_left{
+	float:left;
+	width:50%;	
+}
+.memorize_sel_r{
+	float:left;
+}
+.memorize_sel_l{
+	float:right;
+}
+
+#qaree_selector.selobj ul li, .trans_selector.selobj ul li{
+	float:left;
+}
