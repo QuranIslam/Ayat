@@ -3,7 +3,7 @@ SG = (typeof SG == "undefined")?{} : SG;
 _platform_ = "wos";
 
 url_interface = 'interfacec3ba.json?ui=mobile';
-base_mp3url = 'ayat/mp3';
+base_mp3url = 'https://quran.ksu.edu.sa/ayat/mp3';
 res_url = 'ayat/resources';
 res_ext = 'ayt';
 masahef = {
