@@ -279,22 +279,26 @@ Plugins.DBP.tafsir = function(author,id,cb,cbf){
 		cb(nass);
 	});
 }
-Plugins.DBP.search = function(type , query , tash , cb , cbf){
-    
-	var hp = 'searchm.html?query='+query;
-	window.location.href = "searchm.html?query="+query;
-    xhr.done(function(bayan){
-		var res = bayan.results;
-		var out = {};
-		for(var i in res){
-			out[ res[i]['sura']+'_'+res[i]['aya'] ] = res[i]['text'];
-		}
-		cb(out); ////// bn
-	});
-    xhr.fail(function(){
-        cbf();
-    });
-}
+Plugins.DBP.search = async function(type, query, tash, cb, cbf) {
+  // Retrieve the data from the local JSON file using the fetch function
+  const response = await fetch("quran.json");
+  const data = await response.json();
+
+  // Use the filter method to search for the query within the data
+  const results = data.filter(
+    item => item.text.includes(query) || item.nass_safy.includes(query)
+  );
+
+  // Process the search results and construct an object containing the search results
+  const out = {};
+  for (const result of results) {
+    out[result.sura + "_" + result.aya] = result.text;
+  }
+
+  // Call the callback function with the search results object as an argument
+  cb(out);
+};
+
 
 Plugins.DBP.amaken = function(mosshaf , page , cb){
 	function cb2(j){
