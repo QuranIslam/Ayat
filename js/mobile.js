@@ -3548,116 +3548,34 @@ $(function () {
         };        
 
     }
-    function showCopyWidg(){
-        var sura = parseInt(currAya.split('_')[0]);
-        var aya = parseInt(currAya.split('_')[1]);//
-        var firstAya = aya;
-        var subj = '';//_lang['sura_s']+' '+QuranData.Sura[sura][sura_key]+' : '+_lang['aya_s']+ ' ' +aya;
-        var ids = aya2id(sura, aya);
-        var obj = this;
-        var nass='',orgNass='';
-        var tash = true;
-        function galb(ids, sura ,fromAya, toAya, cb){
-            $.ajaxSetup({ async: false });
+function showCopyWidg(){
+  var sura = parseInt(currAya.split('_')[0]);
+  var aya = parseInt(currAya.split('_')[1]);
+  var ids = aya2id(sura, aya);
 
-            SG.Plugins.DBP.search('ids', ids, tash, function (json) {
-                $.ajaxSetup({ async: true });
-                nass = ''
-                if(fromAya == toAya){
-                    nass += "{" + json[sura + '_' + fromAya] + "}" + " " 
-                    nass += '[' + QuranData.Sura[sura][4] + " : " + fromAya + ']';
+  // Use $.getJSON() to retrieve the contents of the quran.json file
+  $.getJSON('quran.json', function(data) {
+    // Loop through the array of verses in the file
+    for (var i = 0; i < data.length; i++) {
+      var verse = data[i];
+      // Check if the verse's sura and aya match the specified sura and aya
+      if (verse.sura == sura && verse.aya == aya) {
+        // If a match is found, display the verse's text in the dialog
+        var nass = '"' + verse.text + '" (' + QuranData.Sura[sura][4] + ' : ' + aya + ')';
+        var b = SG.Dialog.alertt('<textarea style="font-family:sans;font-size:18px;line-height:170%;width:80%;height:60%;direction:rtl" id="fld_copy">' + nass + '</textarea>', parseAr(_lang['copy']), _emp, {large:true});
 
-                }
-                else{
-                    nass = "{";
-                    for(var i=fromAya; i<=toAya; i++){
-                        nass += ((i != fromAya)?' ':'') + json[sura + '_' + i] +' ('+i+')';
-                    }
-                    nass += '} ';
-                    nass += '[' + QuranData.Sura[sura][4] + " : " + fromAya+'-'+toAya + ']';
-                }
-                cb(nass);
-            });
-        }
-
-        var b = SG.Dialog.alertt('<textarea style="font-family:sans;font-size:18px;line-height:170%;width:80%;height:60%;direction:rtl" id="fld_copy"></textarea><div><button id="copy_bu_addNextAya">+ '+parseAr(_lang['copy_nextAya'])+'</button><button id="copy_bu_toggleTash">'+parseAr(_lang['copy_tashkeel'])+'</button></div>', parseAr(_lang['copy']), _emp, {large:true});
-        //b.hideBu();
-        var contrs = [{cap:parseAr(_lang['send']),cb:send}];
-        if(_platform_ != 'wos'){
-            if(_platform_ != 'android' || Agent.verEqGT(4,0)){
-                contrs.push({cap:parseAr(_lang['copy']),cb:copy});
-            }
-        }
-        b.setContrs(contrs);
-        $("#fld_copy").attr('readonly','readonly');
-        $("#fld_copy").on("keydown",function(e){
-            e.preventDefault();
+        // Add a click event handler to the text area element
+        document.getElementById("fld_copy").addEventListener("click", function() {
+          // Select the text in the text area when it is clicked
+          this.select();
         });
-        $("#copy_bu_addNextAya").on("tapone", addNextAya);
-        $("#copy_bu_toggleTash").on("tapone", toggleTash);
-        function send(){
-            SG.Plugins.Tools.send('', orgNass);
-        };
-        function copy(){
-            SG.Plugins.Tools.copy(orgNass, function(){
-                alert(parseAr(_lang['copy_done']));
-            }, function(){
-                alert(parseAr(_lang['copy_failed']));            
-            });
-        };        
-        function toggleTash(){
-            tash = ! tash;
-            galber();
-        }
-        function addNextAya(){
-            if ((aya+1) <= QuranData.Sura[sura][1]) {
-                aya++;
-                ids += ","+aya2id(sura, aya);
-                galber();
-            }
-        };
-        function galber(){
-            var a = SG.Dialog.notify(parseAr(_lang['pls_wait']));//alertt(parseAr(_lang['pls_wait']), null, null, true);
-            galb(ids, sura, firstAya, aya, function(nass){
-                a.tm();
-                nass += "\n\n" + _lang['ayaLink'] + ": " + 'http://quran.ksu.edu.sa/index.php?aya=' + sura + '_' + firstAya;
-                orgNass = nass;
-                $("#fld_copy").val(nass);
-            });
-        }
-        $("#fld_copy").on(END_EV,function(){
-            setTimeout(function(){
-                createSelection($("#fld_copy")[0],0,$("#fld_copy").val().length);
-            }, 200);
-        });
-
-        galber();
-
-        function createSelection(field, start, end) {
-            if( field.createTextRange ) {
-                //alert(11);
-              var selRange = field.createTextRange();
-              selRange.collapse(true);
-              selRange.moveStart('character', start);
-              selRange.moveEnd('character', end);
-              selRange.select();
-              field.focus();
-            } else if( field.setSelectionRange ) {
-                //alert(22);
-              field.focus();
-              field.setSelectionRange(start, end);
-            } else if( typeof field.selectionStart != 'undefined' ) {
-                //alert(33);
-              field.selectionStart = start;
-              field.selectionEnd = end;
-              field.focus();
-            }
-            else{
-                 //alert("NO");
-            }
-        }                
-
+      }
     }
+  });
+}
+
+
+
     
     
     SG.Mtest = (function($){
